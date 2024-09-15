@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body bgcolor="#87CEEB">
+    <h2 style="text-align: center;">Registration From</h2>
+    <h4 style="text-align: center;">Register your Jacckson Eletronics product here</h4>
+    <table align="center">
+        <tr>
+            <td width="300" height="500" style="line-height: 1.7;">
+                <label for="fn">First Name:</label><br>
+                <label for="ad1">Address #1:</label><br>
+                <label for="ad2">Address #2:</label><br>
+                <label for="city">City:</label><br>
+                <label for="ctr">Country:</label>
+                <hr width="240%"> 
+                <label for="pd">Product:</label><br>
+                <label for="pch">Date Purchased:</label><br>
+                <label for="sr">Serial #:</label><br>
+                Used for:<br>
+                <br>
+                <br>
+                System (check all that apply):<br>
+                <br>
+                <hr width="240%">
+                <label for="cmt">Comments?</label><br>
+                <br><br><br><br>
+            </td>
+            <td style="line-height: 1.75;">
+                <form action="">
+                    <input type="text" id="fn">
+                    &nbsp;&nbsp;&nbsp;
+                    <label for="ln">Last Name:</label>
+                    <input type="text" id="ln" name="lastname"><br>
+                    <input type="text" size="50" id="ad1" name="address1"><br>
+                    <input type="text" size="50" id="ad2" name="address2"><br>
+                    <input type="text" size="15" id="city" name="city">
+                    <label for="state">State:</label>
+                    <input type="text" size="10" id="state" name="state">
+                    <label for="zip">Zip:</label>
+                    <input type="text" size="10" id="zip" name="zip"><br>
+                    <input type="text" value="United States" id="ctr" name="country">
+                    <br><br>
+                    <select id="pd" name="product">
+                        <option value="1" selected>ScanMaster</option>
+                        <option value="2">ScanMaster II</option>
+                        <option value="3">LaserPrint 1000</option>
+                        <option value="1">LaserPrint 5000</option>
+                        <option value="1">Print/Scan 150</option>
+                        <option value="1">Print/Scan 250</option>
+                    </select><br>
+                    <input type="text" id="pch" name="datepurchased"><br>
+                    <input type="text" id="sr" name="serial"><br>
+                    <input type="radio" name="home">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="edu">Educational Institution<br>
+                    <input type="radio" name="bu">Business&nbsp;&nbsp;
+                    <input type="radio" name="other">Other<br>
+                    <input type="radio" name="go">Government<br>
+                    <input type="checkbox" name="win">Window&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="unix">UNIX<br>
+                    <input type="checkbox" name="ma">Macintosh&nbsp;&nbsp;
+                    <input type="checkbox" name="orr">Other
+                    <br>
+                    <br>
+                    <textarea name="comments" rows="6" cols="49" id="cmt"></textarea><br>
+                    <input type="submit" value="Click to register">
+                    <input type="reset" value="Click to cancel">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <form action="" style="background-color: white;">
+        <h1>Contact Us!</h1>
+        <fieldset style="line-height: 1.7;">
+            <legend>Your message:</legend>
+            <label for="to">To</label>
+            <input type="text" name="to" id="to" value="Example Cafe"><br>
+            <label for="email">Your email</label>
+            <input type="text" name="email" id="email"><br>
+            <label for="mess">Message</label><br>
+            <textarea name="mess" id="mess" rows="7" cols="100"></textarea><br>
+            Attach File <input type="file" multiple accept="image/png,image/jpeg">
+        </fieldset>
+        <fieldset style="line-height: 1.7;">
+            <legend>How you found us:</legend>
+            <label for="f">How did you hear of us</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name=howww id="f">
+                <option value="1">Google</option>
+                <option value="2">Youtube</option>
+                <option value="3">Facebook</option>
+            </select>
+            <br>
+            Newsletter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="Checkbox">Ensur this box is check if you would like to receive updates
+        </fieldset><br>
+        <input type="submit" value="Send message">
+    </form>
+    <br>
+    <form action="" style="background-color: white;">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="phone">Telephone Number:</label><br>
+        <input type="tel" name="phone" id="phone"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="fc">Favorite Color:</label><br>
+        <input type="color" id="fc" name="fcolor"><br><br>
+        <label for="dob">Day of birth:</label><br>
+        <input type="date" id="dob" name="birth"><br><br><br><br><br><br><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
